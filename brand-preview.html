@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Brand — not Orchestris</title>
+  <style>
+    :root {
+      --bg: #07090f;
+      --panel: #0e1420;
+      --line: rgba(255,255,255,.08);
+      --gold: #e4c27a;
+      --ink: #e8edf5;
+      --mute: #8b95a8;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.5 ui-sans-serif, system-ui, "Segoe UI", sans-serif; }
+    body { padding: 48px 24px 80px; }
+    .wrap { max-width: 980px; margin: 0 auto; }
+    h1 { font-size: 13px; letter-spacing: .22em; text-transform: uppercase; color: var(--gold); font-weight: 600; margin: 0 0 12px; }
+    h2 { font-size: 40px; letter-spacing: -.03em; margin: 0 0 8px; font-weight: 560; }
+    .lede { color: var(--mute); max-width: 42em; margin: 0 0 40px; }
+    .row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin: 28px 0 48px; }
+    @media (max-width: 800px) { .row { grid-template-columns: 1fr; } }
+    .card { background: var(--panel); border: 1px solid var(--line); border-radius: 20px; padding: 28px 24px 22px; }
+    .card p { margin: 14px 0 0; color: var(--mute); font-size: 13px; }
+    .card strong { color: var(--ink); font-weight: 560; }
+    .icon-stage {
+      height: 168px; display: grid; place-items: center;
+      background: radial-gradient(120px 80px at 50% 40%, rgba(228,194,122,.08), transparent 70%);
+    }
+    .icon { width: 112px; height: 112px; filter: drop-shadow(0 18px 30px rgba(0,0,0,.45)); }
+    .kill, .keep { border-radius: 16px; padding: 22px 24px; margin: 0 0 16px; border: 1px solid var(--line); }
+    .kill { background: #161018; }
+    .keep { background: #101816; }
+    .kill h3, .keep h3 { margin: 0 0 8px; font-size: 15px; }
+    .kill h3 { color: #f0a8a8; }
+    .keep h3 { color: #b7e3c0; }
+    ul { margin: 8px 0 0; padding-left: 1.1em; color: var(--mute); }
+    li { margin: 6px 0; }
+    .names { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 36px; }
+    @media (max-width: 800px) { .names { grid-template-columns: 1fr; } }
+    .name {
+      padding: 28px 24px; border-radius: 20px;
+      background: linear-gradient(180deg, #10182a, #0b1018);
+      border: 1px solid var(--line);
+    }
+    .name .wm { font-size: 32px; letter-spacing: -.04em; font-weight: 560; }
+    .name small { display: block; color: var(--mute); font-size: 13px; margin-top: 6px; }
+    .name .note { color: var(--mute); font-size: 12px; margin-top: 12px; line-height: 1.45; }
+    .pick { border-color: rgba(228,194,122,.35); }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Brand</h1>
+    <h2>将作土在解释。Orchestris 也是。</h2>
+    <p class="lede">GPT 赢在品类：英文专名 + 圆角方图标。输在独特性：还是乐队，还是枢纽图，还是 2026 默认青蓝。图标必须是精确几何，不是生成图，更不是多 Agent 说明书。这一页不锁名。</p>
+
+    <div class="row">
+      <div class="card">
+        <div class="icon-stage">
+          <svg class="icon" viewBox="0 0 112 112" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#f3d9a0"/>
+                <stop offset="1" stop-color="#c9a25a"/>
+              </linearGradient>
+              <filter id="glow1">
+                <feGaussianBlur stdDeviation="1.6" result="b"/>
+                <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+              </filter>
+            </defs>
+            <rect width="112" height="112" rx="26" fill="#0b1220"/>
+            <rect x=".75" y=".75" width="110.5" height="110.5" rx="25.2" fill="none" stroke="rgba(255,255,255,.06)"/>
+            <g filter="url(#glow1)" stroke="url(#g1)" fill="none" stroke-linecap="round">
+              <path d="M56 26 v60" stroke-width="4.2"/>
+              <path d="M47 34 h18" stroke-width="4.2"/>
+            </g>
+          </svg>
+        </div>
+        <p><strong>缝</strong><br/>一道口。不是枢纽，没有卫星点。</p>
+      </div>
+      <div class="card">
+        <div class="icon-stage">
+          <svg class="icon" viewBox="0 0 112 112" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="g2" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#f7e4b5"/>
+                <stop offset="1" stop-color="#b8924a"/>
+              </linearGradient>
+            </defs>
+            <rect width="112" height="112" rx="26" fill="#0b1220"/>
+            <rect x=".75" y=".75" width="110.5" height="110.5" rx="25.2" fill="none" stroke="rgba(255,255,255,.06)"/>
+            <path d="M56 24 L88 56 L56 88 L24 56 Z" fill="none" stroke="url(#g2)" stroke-width="4.2" stroke-linejoin="round"/>
+            <path d="M56 40 L72 56 L56 72 L40 56 Z" fill="#e4c27a" opacity=".92"/>
+          </svg>
+        </div>
+        <p><strong>切</strong><br/>一块切开的石头。Linear 那一档。</p>
+      </div>
+      <div class="card">
+        <div class="icon-stage">
+          <svg class="icon" viewBox="0 0 112 112" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="g3" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#f4d9a1"/>
+                <stop offset="1" stop-color="#c19852"/>
+              </linearGradient>
+            </defs>
+            <rect width="112" height="112" rx="26" fill="#0b1220"/>
+            <rect x=".75" y=".75" width="110.5" height="110.5" rx="25.2" fill="none" stroke="rgba(255,255,255,.06)"/>
+            <path d="M32 44 L56 30 L80 44 L56 86 Z" fill="none" stroke="url(#g3)" stroke-width="4.2" stroke-linejoin="round"/>
+            <path d="M56 30 L56 86" stroke="url(#g3)" stroke-width="3.2" opacity=".7"/>
+          </svg>
+        </div>
+        <p><strong>折</strong><br/>一张金属折一次。一个形，不是一张图解。</p>
+      </div>
+    </div>
+
+    <div class="kill">
+      <h3>不能用</h3>
+      <ul>
+        <li><b>Orchestris</b> 没有同名成品，但还是 Orchest*。同品类已经挤满：Orchestria.dev（Your AI agents. One command center.）、Orchestrix、Orchesis、OrchestrAI、Orchestra 编排层。</li>
+        <li><b>智序</b> 杭州软件外包 zhixu.cn，另有智序引擎、智序港城、鞋服 SaaS「智序」。</li>
+        <li><b>Orchestria / Taskestra / Conduvia</b> 改一个字母救不了嘴感。指挥、乐队、器械。</li>
+        <li><b>将作 / 齐活 / 总台</b> 用中文解释架构。土的是解释，不是中文。</li>
+        <li><b>Auvra</b> 差点锁上。英国香水、旧金山女性健康 AI、保健品、Chainlink 黑客松 Agent。</li>
+        <li><b>Ogee</b> 美国有机美妆 ogee.com。</li>
+        <li><b>Skerry</b> 这一轮差点挂上。skerry.xyz 是支付编排：「One orchestration layer」。</li>
+      </ul>
+    </div>
+    <div class="keep">
+      <h3>规则</h3>
+      <ul>
+        <li>Cursor 不叫 CodeOrchestrator。Linear 不叫 IssueHub。名字不能解释产品。</li>
+        <li>将作是用中文解释。Orchestris 是用拉丁语解释。土的是解释。</li>
+        <li>中文界面直接挂英文专名。硬配一个「智×」比没有更土。</li>
+        <li>图标是商标，不是架构图。枢纽加点是把产品画成说明书。青蓝圆点是 2024–2026 的 AI SaaS 默认色。</li>
+        <li>2026 的四到六个字母几乎都被占了。这一页给三个还活着的，不锁第四个会翻车的。</li>
+      </ul>
+    </div>
+
+    <div class="names">
+      <div class="name pick">
+        <div class="wm">Hirta</div>
+        <small>HER-tuh · 圣基尔达主岛</small>
+        <p class="note">目前最干净。爱荷华公交 App 叫 HIRTA，是缩写，不是同名软件。不配中文名。</p>
+      </div>
+      <div class="name">
+        <div class="wm">Staffa</div>
+        <small>STAFF-uh · 芬戈尔洞</small>
+        <p class="note">柱状玄武岩，和金标切面同构。Staffia / Staffera / StaffAI / Staffiva 占着 Staff* 前缀，嘴感有点挤。</p>
+      </div>
+      <div class="name">
+        <div class="wm">Foula</div>
+        <small>FOO-luh · 设得兰鸟岛</small>
+        <p class="note">没有同名成品。旁边有 Fraoula。听成 fool-a 会贱。备选，不主推。</p>
+      </div>
+    </div>
+    <p class="lede" style="margin-top:22px">窗口、侧栏、Dock 只写英文专名。代码仓库、Tauri id、package.json 先不动。你点一个，再改产品表面。</p>
+  </div>
+</body>
+</html>
