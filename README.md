@@ -18,6 +18,7 @@
 - 设置只有自定义供应商、官方登录。
 - 自定义供应商：API 地址、密钥、协议、获取模型列表、简短模型请求测试。
 - 官方登录：独立迁移旧项目的 Claude、Codex、Kimi、Antigravity OAuth 适配器、回调和设备登录；系统浏览器授权，支持退出登录。
+- Gemini OAuth 的 Google Client ID 与 Client Secret 通过环境变量 GEMINI_OAUTH_CLIENT_ID、GEMINI_OAUTH_CLIENT_SECRET 提供，源码不保存凭据。
 - 密钥及登录令牌使用 Windows DPAPI 当前用户加密；普通配置存放于 `.data/workspace.json`，不包含密钥。
 
 ## 明确边界与待验收
@@ -63,3 +64,4 @@ Gemini、Grok 等未具备独立可迁移登录配置的入口暂不伪造；后
 - 设置为独立整页路由 `#settings/connections` 和 `#settings/manager`，不显示项目侧栏，提供返回与关闭入口，支持浏览器历史导航。
 - 参考 CC Switch 的设置页组织，以及旧项目 ManagerSection 的连接/模型选择概念；未引入参考项目的代理、计费、公告、额度和其他功能。
 - 11 项自动测试通过，包括管理者保存后服务重启恢复、无效连接拒绝及独立设置页面结构。浏览器工具本轮不可用，尚未完成本轮视觉验收。
+
