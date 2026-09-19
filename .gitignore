@@ -1,0 +1,21 @@
+# 本地数据与依赖
+.data/
+node_modules/
+src-tauri/target/
+src-tauri/resources/
+
+# 本地运行状态与日志
+*.log
+*.pid
+.playwright-cli/
+
+# 本地测试副本
+测试1/
+测试1 - 副本/
+测试1 - 副本 (2)/
+测试1 - 副本 (3)/
+
+# 外部参考仓库与临时资料
+参考/
+各家Agent的内置技能/
+*.docx
